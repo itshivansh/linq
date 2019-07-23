@@ -55,7 +55,9 @@ TestCase5: TestToGetOddNumberOfValues
 	   (ArrayList)	
 	   
 TestCase6: TestToGetValueFromDelegate
+
         int valuefromTestcase = 2;
+        
 		actual     :LINQTask3PropertyObject.FuntoUseDelegatewithLambda(valuefromTestcase);
 	   (int)
 	   
@@ -64,8 +66,11 @@ TestCase6: TestToGetValueFromDelegate
 	   (int)	
 	   	   
 TestCase7: TestToGetValueFromDelegatewithMorethnOneParameters
+
         int firstvalue = 10;
+        
         int secondvalue = 15;
+        
 		actual     :LINQTask3PropertyObject.FuntoUseDelegatewithLambda(valuefromTestcase);
 	   (int)
 	   
@@ -73,7 +78,9 @@ TestCase7: TestToGetValueFromDelegatewithMorethnOneParameters
 	   expected   : 25
 	   (int)	
 TestCase8: FuntoUseFuncDelegate
+
         int fisrstvaluetofuncdelegate = 10;
+        
      
 		actual     :LINQTask3PropertyObject.FuntoUseFuncDelegate(fisrstvaluetofuncdelegate);
 	   (int)
