@@ -72,7 +72,7 @@ TestCase7: TestToGetValueFromDelegatewithMorethnOneParameters
 	   
 	   expected   : 25
 	   (int)	
-TestCase9: FuntoUseFuncDelegate
+TestCase8: FuntoUseFuncDelegate
         int fisrstvaluetofuncdelegate = 10;
      
 		actual     :LINQTask3PropertyObject.FuntoUseFuncDelegate(fisrstvaluetofuncdelegate);
@@ -81,7 +81,7 @@ TestCase9: FuntoUseFuncDelegate
 	   
 	   expected   : 11
 	   (int)	
-TestCase10: TestToCheckfuncDelegatewithClassProperties
+TestCase9: TestToCheckfuncDelegatewithClassProperties
        
 		actual     :LINQTask3PropertyObject.FuntoCheckfuncDelegatewithClassProperties();
 	   (int)
@@ -89,7 +89,7 @@ TestCase10: TestToCheckfuncDelegatewithClassProperties
 	   
 	   expected   : 10
 	   (int)	
-TestCase11: TestToGetMaxValueofEmployeeId
+TestCase10: TestToGetMaxValueofEmployeeId
       
 		actual     :LINQTask3PropertyObject.FunToGetMaxValueofEmployeeId();
 	   (int)
@@ -97,7 +97,7 @@ TestCase11: TestToGetMaxValueofEmployeeId
 	   
 	   expected   : 4
 	   (int)	
-TestCase12: TestToGetMinValueofEmployeeId
+TestCase11: TestToGetMinValueofEmployeeId
       
 		actual     :LINQTask3PropertyObject.FunToGetMinValueofEmployeeId();
 	   (int)
@@ -113,9 +113,9 @@ TestCase12: TestToGetMinValueofEmployeeId
      
     `git clone https://gitlab-cgi.stackroute.in/stack_csharp_bytelearning/exercise-10.git`
 
-2. Navigate to exercise-9 folder
+2. Navigate to exercise-10 folder
 
-    `cd exercise-9`
+    `cd exercise-10`
 
 3. Remove its remote or original reference
 
