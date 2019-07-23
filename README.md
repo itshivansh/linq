@@ -74,7 +74,7 @@ TestCase5: TestToGetOddNumberOfValues
 
 5. Add your new repository reference as remote
 
-     `git remote add origin https://gitlab-cts.stackroute.in/{{yourusername}}/exercise-10.git`
+     `git remote add origin https://gitlab-cgi.stackroute.in/{{yourusername}}/exercise-10.git`
 
      **Note: {{yourusername}} should be replaced by your username from gitlab**
 
