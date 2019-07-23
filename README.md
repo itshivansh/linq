@@ -39,7 +39,7 @@ LINQTask3Test:
 TestCase4: TestToGetEvenNumberOfValues
 
 		actual     :LINQTask3PropertyObject.FunToReturnEvenNumberofItems();
-	   (int[])
+	   (ArrayList)
 	   
 	   
 	   expected   : {46,56}
@@ -53,7 +53,58 @@ TestCase5: TestToGetOddNumberOfValues
 	   
 	   expected   : {11,21,33,89,09,67}
 	   (ArrayList)	
-
+	   
+TestCase6: TestToGetValueFromDelegate
+        int valuefromTestcase = 2;
+		actual     :LINQTask3PropertyObject.FuntoUseDelegatewithLambda(valuefromTestcase);
+	   (int)
+	   
+	   
+	   expected   : 4
+	   (int)	
+	   	   
+TestCase7: TestToGetValueFromDelegatewithMorethnOneParameters
+        int firstvalue = 10;
+        int secondvalue = 15;
+		actual     :LINQTask3PropertyObject.FuntoUseDelegatewithLambda(valuefromTestcase);
+	   (int)
+	   
+	   
+	   expected   : 25
+	   (int)	
+TestCase9: FuntoUseFuncDelegate
+        int fisrstvaluetofuncdelegate = 10;
+     
+		actual     :LINQTask3PropertyObject.FuntoUseFuncDelegate(fisrstvaluetofuncdelegate);
+	   (int)
+	   
+	   
+	   expected   : 11
+	   (int)	
+TestCase10: TestToCheckfuncDelegatewithClassProperties
+       
+		actual     :LINQTask3PropertyObject.FuntoCheckfuncDelegatewithClassProperties();
+	   (int)
+	   
+	   
+	   expected   : 10
+	   (int)	
+TestCase11: TestToGetMaxValueofEmployeeId
+      
+		actual     :LINQTask3PropertyObject.FunToGetMaxValueofEmployeeId();
+	   (int)
+	   
+	   
+	   expected   : 4
+	   (int)	
+TestCase12: TestToGetMinValueofEmployeeId
+      
+		actual     :LINQTask3PropertyObject.FunToGetMinValueofEmployeeId();
+	   (int)
+	   
+	   
+	   expected   : 1
+	   (int)		   
 ---
 
 ### To use this as a boilerplate for your new project, you can follow these steps
