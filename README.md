@@ -128,7 +128,7 @@ TestCase11: TestToGetMinValueofEmployeeId
 
      `git remote rm origin`
 
-4. Create a new repo in gitlab named `exercise-9` as private repo
+4. Create a new repo in gitlab named `exercise-10` as private repo
 
 5. Add your new repository reference as remote
 
