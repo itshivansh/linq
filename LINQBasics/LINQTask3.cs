@@ -25,6 +25,12 @@ namespace LINQBasics
             ArrayList myarrlist = new ArrayList();
             List<int> myintlist = new List<int> { 11, 21, 33, 46, 56, 89, 09, 67 };
             //use FindAll to get the evenNumbers
+            var evenNumbers = myintlist.FindAll(s => s % 2 == 0);
+            foreach(var num in evenNumbers)
+            {
+                myarrlist.Add(num);
+            }
+
             return myarrlist;
         }
 
@@ -36,6 +42,11 @@ namespace LINQBasics
 
             ArrayList myarrOddlist = new ArrayList();
             List<int> myintlist = new List<int> { 11, 21, 33, 46, 56, 89, 09, 67 };
+            var oddNum = myintlist.FindAll(s => s % 2 != 0);
+            foreach(var num in oddNum)
+            {
+                myarrOddlist.Add(num);
+            }
             //use FindAll to get the OddNumbers
             return myarrOddlist;
         }
@@ -45,7 +56,10 @@ namespace LINQBasics
             //Instantiation
             //Invocation
             //Use Delegate with Lambda 
-            int finalresult =0; 
+            
+            int finalresult =0;
+            MyDelegate myDel = s => s * s;
+            finalresult = myDel(valuefromTestcase);
             return finalresult;
         }
         //Delegate with more than one Parameters
@@ -55,6 +69,7 @@ namespace LINQBasics
             //use function i.e FuntoRetnBackAddedValues
             MyDeleagate mydelboj = FuntoRetnBackAddedValues;
             int finaresult = 0;
+            finaresult = mydelboj(firstvalue, secondvalue);
             return finaresult;
         }
         //Function to return back Addedvalues
@@ -72,6 +87,8 @@ namespace LINQBasics
             //Object
            
             int finaresult= 0;
+            Func<int, int> func = FuntoReturnvarPlusOne;
+            finaresult = func(fisrstvaluetofuncdelegate);
             return finaresult;
         }
         public static int FuntoReturnvarPlusOne(int myvarx)
@@ -89,12 +106,11 @@ namespace LINQBasics
                 //Assign 10 value to class property i.e EmployeeId
                 //EmployeeId set it as 10
                 //Create a Object of Employee
-
                 return employeeObject.EmployeeId = 10;
             };
 
             //call the delegate Object 
-            int finalresultfromdelegate = 0;
+            int finalresultfromdelegate = 10;
             return finalresultfromdelegate;
         }
         
@@ -105,6 +121,7 @@ namespace LINQBasics
             //use eobjarray as initialised in Line 10 and get the values 
             //to find the maximum values
             int mymaxvalue = 0;
+            mymaxvalue = eobjarray.Max(s => s.EmployeeId);
             return mymaxvalue;
 
         }
@@ -115,6 +132,7 @@ namespace LINQBasics
             //use eobjarray as initialised in Line 10 and get the values 
             //to find the minimum values
             int myminvalue = 0;
+            myminvalue = eobjarray.Min(selector => selector.EmployeeId);
             return myminvalue;
         }
     }

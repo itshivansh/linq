@@ -19,7 +19,13 @@ namespace LINQBasics
             //int i = 0;
             //Return the Employee Ids from 1 to 3  using foreach loop iteration 
             //use foreach without LINQ Concept to know the reason of using the LINQ
-            
+            int i = 0;
+            foreach(var emp in eobjarray)
+            {
+                if (i<3)
+                sendmyselectedEmployeeIds[i] = emp.EmployeeId;
+                i++;
+            }
             return sendmyselectedEmployeeIds;
         }
     }
